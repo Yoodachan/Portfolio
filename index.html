@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>유다찬 포트폴리오</title>
+</head>
+<style>
+    @import url('https://cdn.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css');
+    /* Galmuri9을(를) 사용하려면 */
+    *,ol,ul,li {
+      margin: 0; padding: 0; list-style: none;
+    }
+    * {
+      font-family: "Galmuri9", sans-serif;
+    }
+    :root {
+      --fs-xs: 13px;
+      --fs-s: 16px;
+      --fs-m: 20px;
+      --fs-l: 24px;
+      --fs-xl: 28px;
+      --fs-xxl: 32px;
+    }
+
+
+
+    .fs-xs { font-size: var(--fs-xs); }
+    .fs-s { font-size: var(--fs-s); }
+    .fs-m { font-size: var(--fs-m); }
+    .fs-l { font-size: var(--fs-l); }
+    .fs-xl { font-size: var(--fs-xl); }
+    .fs-xxl { font-size: var(--fs-xxl); }
+
+    .gap20 {
+      gap: 20px;
+    }
+    
+    .d-flex {
+      display: flex;
+    }
+    .a-center {
+      align-items: center;
+    }
+    .j-between {
+      justify-content: space-between;
+    }
+    .m0a {
+      margin: 0 auto;
+      border: 1px solid blue;
+    }
+    .inner_header {
+      width: 1200px;
+    }
+
+
+
+    @media screen and (max-width:360px) {
+      :root {
+        --fs-s: clamp(13px,3.611vw,16px);
+      }
+      .gap20 {
+        gap: clamp(10px,2.778vw,20px);
+      }
+
+    }
+
+</style>
+<body>
+  <header id="header">
+    <div class="inner_header d-flex a-center m0a j-between">
+      <h1 class="logo_header" style="border: 1px solid red; width:60px;height:60px;"><a class="link_logo"><img src=""/></a></h1>
+      <ul class="list_header d-flex a-center gap20 fs-l">
+        <li class="item_header"><a class="link_header">Profile</a></li>
+        <li class="item_header"><a class="link_header">Project</a></li>
+        <li class="item_header"><a class="link_header">Skill</a></li>
+        <li class="item_header"><a class="link_header"></a></li>
+      </ul>
+    </div>
+  </header>
+  <main>호엥</main>
+  <footer></footer>
+  
+</body>
+</html>
